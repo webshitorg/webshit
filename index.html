@@ -1,35 +1,52 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webshit</title>
-    <link rel="stylesheet" href="css/simple.min.css">
-</head>
-<body>
-
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    <header role="banner">
-        <h1>Webshit</h1>
-        <nav aria-label="Main navigation">
-        </nav>
-    </header>
-
-    <main id="main-content" role="main">
-    </main>
-
-    <footer role="contentinfo">
-        <p>
-            This work is licensed under
-            <a href="https://creativecommons.org/licenses/by-sa/4.0/"
-                target="_blank"
-                rel="license noopener noreferrer"
-                aria-label="Creative Commons Attribution-ShareAlike 4.0 International License (opens in a new tab)">
-                CC BY-SA 4.0
-            </a>
-        </p>
-    </footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Webshit</title>
+        <link rel="stylesheet" href="css/simple.min.css">
+        <style>
+            /* Hide the link visually, but accessible to screen readers */
+            .skip-link {
+                position: absolute;
+                top: -50px;
+                left: 0;
+                background: #fff;
+                padding: 8px;
+                z-index: 100;
+                transition: top 0.2s ease;
+            }
+            /* Bring the link into view when it gains focus via Tab key */
+            .skip-link:focus {
+                top: 5px;
+                left: 5px;
+                outline: 5px solid --accent;
+                text-decoration: none;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        <main id="main-content" role="main">
+            <h1>
+                Webshit
+            </h1>
+            <p>
+                <i>the technical, ethical, and psychological failures of modern web environments</i>
+            </p>
+            <h2>
+                <mark><b>This website is shit.</b></mark>
+            </h2>
+            <p>
+                We state this because while we advocate for privacy and accessibility, we are still learning the standards and trying to implement them wherever possible. Digital ethics is an iterative process, not a final state. This project is a work in progress, and we invite the community to help us identify our own failures as we build toward a better web.
+            <p>
+        </main>
+        <footer role="contentinfo">
+            <p>
+                This work is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="license noopener noreferrer" aria-label="Creative Commons Attribution-ShareAlike 4.0 International License (opens in a new tab)"> CC BY-SA 4.0 </a>
+            </p>
+        </footer>
+    </body>
 </html>
